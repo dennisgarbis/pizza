@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="script.js"></script>
+    <title>Pizza Palace</title>
+</head>
+
+<body>
+    <div id="wrapper" class="container p-0">
+        <div>
+            <nav id="nav" class="navbar navbar-expand-sm navbar-dark p-1">
+                <div class="container-fluid">
+                    <a class="navbar-brand p-0" href="index.html">
+                        <img id="logo" src="logo.jpg" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse col-sm-5" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" id="active" href="order.html">Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="hero" class="p-0">
+            <div class="text-dark">
+                <div>
+                    <h1>Please Place Your Order</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- START OF FIRST CONTAINER -->
+            <div class="container px-4 py-3">
+                <div class="row">
+                    <div class="col-sm-6 border">
+                        <form id="form" class="mx-auto" action="" method="">
+                            <section id="pizzaForm">
+                                <section id="order">
+                                    <h3>Type of order?</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="pickup" name="orderType"
+                                            value="Pickup">
+                                        <label class="form-check-label" for="pickup">Pickup</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="delivery" name="orderType"
+                                            value="Delivery">
+                                        <label class="form-check-label" for="delivery">Delivery</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="curbside" name="orderType"
+                                            value="Curbside">
+                                        <label class="form-check-label" for="curbside">Curbside</label>
+                                    </div>
+                                    <hr>
+                                </section>
+                                <section id="size">
+                                    <h3>What size pizza would you like?</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="personal" name="pizzaSize"
+                                            value="personal">
+                                        <label for="personal">Personal - $6.00</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="small" name="pizzaSize"
+                                            value="small">
+                                        <label for="small">Small - $9.00</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="medium" name="pizzaSize"
+                                            value="medium">
+                                        <label for="medium">Medium - $12.00</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="large" name="pizzaSize"
+                                            value="large">
+                                        <label for="large">Large - $14.00</label>
+                                    </div>
+                                    <hr>
+                                </section>
+                                <section id="toppings">
+                                    <h3 class="">What kind of toppings would you like?</h3>
+                                    <p id="allow" class="pt-0 px-4">please allow an additional 10 minutes if more than 3
+                                        toppings are selected</p>
+                                    <h4 class="text-center pb-2">Toppings:</h4>
+                                    <div class="form-check form-check-inline">
+                                        <input class="checkbox" type="checkbox" id="sausage" name="pizzaTopping"
+                                            value="sausage">
+                                        <label class="form-check-label" for="sausage">Sausage</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="checkbox" type="checkbox" id="pepperoni" name="pizzaTopping"
+                                            value="pepperoni">
+                                        <label class="form-check-label" for="pepperoni">Pepperoni</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="checkbox" type="checkbox" id="mushrooms" name="pizzaTopping"
+                                            value="mushrooms">
+                                        <label class="form-check-label" for="mushrooms">Mushrooms</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="checkbox" type="checkbox" id="greenPeppers" name="pizzaTopping"
+                                            value="green peppers">
+                                        <label class="form-check-label" for="greenPeppers">Green Peppers</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="checkbox" type="checkbox" id="pineapple" name="pizzaTopping"
+                                            value="pineapple">
+                                        <label class="form-check-label" for="pineapple">Pineapple</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="checkbox" type="checkbox" id="onions" name="pizzaTopping"
+                                            value="onions">
+                                        <label class="form-check-label" for="onions">Onions</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="checkbox" type="checkbox" id="spinach" name="pizzaTopping"
+                                            value="spinach">
+                                        <label class="form-check-label" for="spinach">Spinach</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="checkbox" type="checkbox" id="xtra-cheese" name="pizzaTopping"
+                                            value="extra cheese">
+                                        <label class="form-check-label" for="xtra-cheese">Extra Cheese</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="checkbox" type="checkbox" id="jalapenos" name="pizzaTopping"
+                                            value="jalapenos">
+                                        <label class="form-check-label" for="jalapenos">Jalapenos</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="checkbox checkbox" type="checkbox" id="bacon" name="pizzaTopping"
+                                            value="bacon">
+                                        <label class="form-check-label" for="bacon">Bacon</label>
+                                    </div>
+                                    <hr>
+                                    <p id="error"></p>
+                                    <div>
+                                        <input id="addPizzaBtn" type="button" class="btn btn-primary m-3"
+                                            value="Add Pizza">
+                                        <input id="resetBtn" type="reset" class="btn btn-primary m-3"
+                                            value="Reset Order">
+                                        <input id="checkoutBtn" type="button" class="btn btn-primary m-3"
+                                            value="Checkout" disabled>
+
+                                    </div>
+                                </section>
+                            </section>
+                            <section id="fillForm" class="px-0">
+                                <h3>Fill Out Your Information</h3>
+                                <label for="name">Your Name:</label>
+                                <output id="name-prompt"></output>
+                                <input type="text" class="form-control" id="name" name="name" required>
+
+                                <label for="address">Your Address:</label>
+                                <output id="address-prompt"></output>
+                                <input type="text" class="form-control" id="address" name="address" required>
+
+                                <label for="email">Email:</label>
+                                <output id="email-prompt"></output>
+                                <input type="email" class="form-control" id="email" name="email" required>
+
+                                <label for="phone">Phone:</label>
+                                <output id="phone-prompt"></output>
+                                <input type="tel" class="form-control" id="phone" placeholder="123-555-7777"
+                                    name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">
+
+                                <label for="comment">Message:</label>
+                                <output id="comment-prompt"></output>
+                                <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
+
+                                <input id="submitOrder" type="button" class="btn btn-primary m-3" value="Submit"
+                                    disabled>
+                                <input id="goBackBtn" type="submit" class="btn btn-primary m-3" value="Go Back">
+                            </section>
+                        </form>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-dark">
+                            <section id="right-side">
+                                <div class="container">
+                                    <div id="checkout">
+                                        <div class="row">
+                                            <div class="col-sm-6 border">
+                                                <h3 class="text-center"><u>Your Order Details:</u></h3>
+
+                                                <p><span class="pizzaSelections">Order Type: </span><span
+                                                        id="selectedType"></span>
+                                                </p>
+                                                <p><span class="pizzaSelections">Pizza Size: </span><span
+                                                        id="selectedSize"></span>
+                                                </p>
+                                                <p><span class="pizzaSelections">Toppings: </span><span
+                                                        id="selectedToppings"></span>
+                                                </p>
+                                                <p><span class="pizzaSelections">Subtotal: $</span><span
+                                                        id="subtotal"></span></p>
+                                                <p><span class="pizzaSelections">Tax 10%: $</span><span id="tax"></span>
+                                                </p>
+                                                <p><span class="pizzaSelections">Total: $</span><span
+                                                        id="totalPrice"></span></p>
+                                            </div>
+                                            <div class="col-sm-6 border">
+                                                <p id="pizzaOrder"></p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="totalPizza">
+                                        <div class="col-sm-12">
+                                            <div class="row">
+                                                <div class="col-sm-6 border">
+                                                    <h3>Total Pizza Order:</h3>
+                                                    <p id="pizzaTable"></p>
+                                                    <div>
+                                                        <h3>Total Price:</h3>
+                                                        <h5>Subtotal: $<span id="totalSubtotal"></span></h5>
+                                                        <h5>Tax: $<span id="totalTax"></span></h5>
+                                                        <h5>Total: $<span id="totalTotal"></span></h5>
+                                                        <p id="dataPizza"></p>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 border">
+                                                    <h3>Your Info:</h3>
+                                                    <p id="url"></p>
+                                                    <p id="data"></p>
+                                                    <h4>Our Message to You:</h4>
+                                                    <p id="response"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </section>
+                            <figure>
+                                <img src="pizza2.jpg" alt="pizza" class="container-fluid p-0">
+                                <figcaption class="figure-caption text-center">~ Our Famous Pizza Oven ~</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> <!-- END OF FIRST CONTAINER -->
+
+        <div class="container bg-dark text-white">
+            <!-- START OF FOOTER -->
+            <div class="row p2">
+                <div class="col-sm-4 text-center">
+                    <h4 class="mt-3">Useful Links:</h4>
+                    <a href="https://www.harpercollege.edu/about/index.php" target="_blank">About</a><br>
+                    <a href="https://www.harpercollege.edu/ads/policies.php" target="_blank">Policy</a><br>
+                    <a href="https://www.indeed.com" target="_blank">Employment</a><br>
+                </div>
+                <div id="icons" class="col-sm-4 p-5 text-center">
+                    <a href="https://www.harpercollege.edu" target="_blank"><img class="mx-2" src="fb-icon.png"
+                            alt="facebook-logo"></a>
+                    <a href="https://www.instagram.com/harpercollege/?hl=en" target="_blank"><img class="mx-2"
+                            src="ig-icon.png" alt="instagram-logo"></a>
+                    <a href="https://twitter.com/HarperCollege?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        target="_blank"><img class="mx-2" src="twitter-icon.png" alt="twitter-icon"></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h4 class="mt-3">Contact Info:</h4>
+                    <p class="phone">Phone Number: <a href="tel:847-867-5309">847-588-2300</a>
+                    <p>
+                    <p class="map">Address: <a href="https://goo.gl/maps/brfNNmgRN3AibG5r6" target="_blank">
+                            1200
+                            Algonquin Rd.</a></p>
+                    <p class="email">Email us: <a href="mailto:example@gmail.com">Eleanor's Pizza Palace</a></p>
+                </div>
+                <div class="col-sm-12 text-center mb-3">Copyright&copy; 2021, Eleanor's Pizza Palace&#174; Dennis
+                    Garbis
+                </div>
+
+            </div>
+        </div> <!-- end of footer -->
+    </div> <!-- end of wrapper -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

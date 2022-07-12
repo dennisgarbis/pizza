@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#wrapper {
+    border: solid black thin;
+    width: 75%;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+#nav {
+    background-color: #620000;
+}
+
+#active {
+    text-decoration: underline 2px rgb(248, 248, 10);
+    color: white;
+    text-underline-offset: 3px;
+}
+
+#active:hover {
+    cursor: auto;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#hero h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#collapsibleNavbar a:hover {
+    color: white;
+    text-decoration: underline 2px rgb(248, 248, 10);
+    text-underline-offset: 3px;
+
+}
+
+
+#logo {
+    width: 60px;
+}
+
+#hero p {
+    font-style: italic;
+}
+
+figcaption {
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+}
+
+#welcome {
+    background-color: #0d5eaf;
+    text-align: center;
+}
+
+.table-row {
+    background-color: #0d5eaf;
+    color: white;
+}
+
+.pizzaSelections {
+    font-weight: bold;
+}
+
+#allow {
+    font-size: 13px;
+    font-style: italic;
+}
+
+#error {
+    font-weight: bold;
+}
+
+#fillForm {
+    display: none;
+}
+
+#url {
+    display: none;
+}
+
+#totalPizza {
+    display: none;
+}
+
+
+output {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#icons img {
+    height: 50%;
+}
+
+#icons img:hover {
+    transform: scale(1.2);
+}

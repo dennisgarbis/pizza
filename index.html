@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="images/dionysus-logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="script.js"></script>
+    <title>Pizza Palace</title>
+</head>
+
+<body>
+    <div id="wrapper" class="container-fluid p-0">
+        <nav id="nav" class="navbar navbar-expand-sm sticky-top navbar-dark p-1">
+            <div class="container-fluid">
+                <a class="navbar-brand p-0">
+                    <img id="logo" src="logo.jpg" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse col-sm-5" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" id="active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="hero" class="p-0">
+            <div class="text-dark">
+                <div>
+                    <h1>Eleanor's Pizza Palace</h1>
+                </div>
+                <figure>
+                    <img src="pizza.jpg" alt="pizza" class="container-fluid p-0">
+                    <figcaption class="figure-caption">~ Our Famous Pizza Oven ~</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div id="welcome" class="container text-white py-3">
+
+        </div>
+        <div class="container px-5 py-1">
+            <!-- START OF FIRST ROW -->
+            <div class="row">
+                <div class="col-sm-5 p-5">
+                    <figure>
+                        <img src="pizza3.jpg" alt="pizza" class="container-fluid p-0">
+                        <figcaption class="figure-caption text-center">~ cooked to perfection ~</figcaption>
+                    </figure>
+                    <div class="text-center">
+                        <button id="order" class="p-2" onclick="document.location='order.html'">Order Now!!</button>
+                    </div>
+                </div>
+                <div class="col-sm-7 px-5 text-center">
+                    <h3 id="intro" class="my-5">Welcome to Eleanor's Pizza Palace</h3>
+                    <h2>Hours Of Operation:</h2>
+                    <table class="table table-bordered">
+                        <thead class="table-secondary p-0">
+                            <tr>
+                                <th>Days</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday - Thurs</td>
+                                <td>11 am - 9 pm</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td>Friday</td>
+                                <td>11 am - 10 pm</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>12 pm - 11 pm</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td>Sunday</td>
+                                <td>12 pm - 8 pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Our Location:</h2>
+                    <h5>1200 Algonquin Rd.</h5>
+                    <h5>Palatine, IL 60067</h5>
+                    <h5>847.588.2300</h5>
+                </div>
+            </div>
+        </div> <!-- END OF FIRST ROW -->
+
+        <!-- START OF FOOTER -->
+        <div class="container-fluid bg-dark text-white">
+            <div class="row p2">
+                <div class="col-sm-4 text-center">
+                    <h4 class="mt-3">Useful Links:</h4>
+                    <a href="https://www.harpercollege.edu/about/index.php" target="_blank">About</a><br>
+                    <a href="https://www.harpercollege.edu/ads/policies.php" target="_blank">Policy</a><br>
+                    <a href="https://www.indeed.com" target="_blank">Employment</a><br>
+                </div>
+                <div id="icons" class="col-sm-4 p-5 text-center">
+                    <a href="https://www.harpercollege.edu" target="_blank"><img class="mx-2" src="fb-icon.png"
+                            alt="facebook-logo"></a>
+                    <a href="https://www.instagram.com/harpercollege/?hl=en" target="_blank"><img class="mx-2"
+                            src="ig-icon.png" alt="instagram-logo"></a>
+                    <a href="https://twitter.com/HarperCollege?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        target="_blank"><img class="mx-2" src="twitter-icon.png" alt="twitter-icon"></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h4 class="mt-3">Contact Info:</h4>
+                    <p class="phone">Phone Number: <a href="tel:847-867-5309">847-588-2300</a>
+                    <p>
+                    <p class="map">Address: <a href="https://goo.gl/maps/brfNNmgRN3AibG5r6" target="_blank">
+                            1200
+                            Algonquin Rd.</a></p>
+                    <p class="email">Email us: <a href="mailto:example@gmail.com">Eleanor's Pizza Palace</a></p>
+                </div>
+                <div class="col-sm-12 text-center mb-3">Copyright&copy; 2021, Eleanor's Pizza Palace&#174; Dennis
+                    Garbis
+                </div>
+
+            </div>
+        </div> <!-- end of footer -->
+    </div> <!-- end of container -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
